@@ -20,7 +20,7 @@ function RootLayoutNav() {
         } else {
           const inAuthGroup = segments[0] === "(auth)";
           if (!user && !inAuthGroup) {
-            router.replace("/login");
+            router.replace("/onboarding");
           } else if (user && inAuthGroup) {
             router.replace("/");
           }
